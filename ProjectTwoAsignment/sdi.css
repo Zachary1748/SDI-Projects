@@ -1,0 +1,38 @@
+html {
+    background-color: #F5F5F5;
+}
+body {
+    font-family: "Lucida Grande", "Arial", sans-serif;
+    margin: 1.5em auto;
+    padding: 1.5em;
+    background-color: white;
+    color: #4D4B39;
+    max-width: 35em;
+    border: 0.75em solid rgba(222, 222, 222, 1);
+    line-height: 1.5em;
+    font-size: 14px;
+}
+p {
+    margin: 1.5em 0;
+}
+.indent {
+    text-indent: 25px;
+}
+h1 {
+    background-color: #39B7CD;
+    color: #FFFFFF;
+    font-size: 200%;
+    padding: 0.75em;
+    margin: -0.75em -0.75em 0.75em -0.75em;
+}
+h2 {
+    background-color: #39B7CD;
+    color: rgba(222, 222, 222, 1);
+    font-size: 150%;
+    padding: 1em;
+    margin: -1em -1em 1em -1em;
+}
+h1 + h2 {
+    margin-top: -2em;
+    padding-top: 10px;
+}
