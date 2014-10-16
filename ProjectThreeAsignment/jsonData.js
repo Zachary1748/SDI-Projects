@@ -1,7 +1,6 @@
-// JSON Data hiring people info
-var jsExperts = {
+var json1 = {
     
-    "peoplehiring" : [
+    "jsExpert": [
         
         {
             
@@ -19,12 +18,12 @@ var jsExperts = {
         }
         
     ]
-
+    
 };
 
-var phpExperts = {
+var json2 = {
     
-    "peoplehiring" : [
+    "phpExpert": [
         
         {
             
@@ -49,5 +48,16 @@ var phpExperts = {
         }
         
     ]
-
+    
 };
+
+
+
+
+
+
+
+
+
+
+
