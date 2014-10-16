@@ -19,8 +19,8 @@ var requestAnswer = function() {
     if (jobOffer === "Yes" || jobOffer === "yes") {
         
         console.log("Awesome! Let's get started on the project.");
-        console.log("Next we need to find out how many people we need to hire for this project.");
         console.log("Also we have decided that we are going to build this eCommerce website with " + codingCMS);
+        console.log("Next we need to find out how many people we need to hire for this project.");
         
         return codingCMS;
         
@@ -51,7 +51,7 @@ var hireIncorrect = function () {
 
 if (jobOffer === "Yes" || jobOffer === "yes") {
     
-    console.log("Hello " + requestAnswer());
+    alert("We are going to build the website using " + requestAnswer());
 
     hireAmmount = prompt("How many people would you like to hire for this project?", "1-10");
     
@@ -79,6 +79,8 @@ if (jobOffer === "Yes" || jobOffer === "yes") {
     
     
     console.log(hireAmmount);
+    
+    
     
     
 } else {
