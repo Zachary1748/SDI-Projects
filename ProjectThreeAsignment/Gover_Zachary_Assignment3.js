@@ -8,6 +8,7 @@
 var jobOffer;
 var hirePeople = true;
 var hireAmmount;
+var chargeAmount;
 
 jobOffer = prompt("We have an offer from Freelancer.com to build a big eCommerce website, do you want to accept it?", "Yes or No?");
 
@@ -116,6 +117,25 @@ if (jobOffer === "Yes" || jobOffer === "yes") {
     handleJS(json1);
     
     handlePHP(json2);
+    
+    console.log("We need to find out how much we need to charge the client. We would like to charge them 2\,000");
+    
+    chargeAmount = new Array();
+    chargeAmount[0] = 100;
+    chargeAmount[1] = 250;
+    chargeAmount[2] = 1500;
+    
+    while (chargeAmount < 2000){
+        
+        chargeAmount[2] = chargeAmount[2] + 50;
+        
+        console.log("Okay, it's now " + chargeAmount);
+        
+    };
+    
+    console.log("Finally, the total project cost " + chargeAmount + "charge details: " + "mockup: " + chargeAmount[0] +
+                " browser testing: " + chargeAmount[1] +
+                " Development: " + chargeAmount[2]);
     
     var projectFinished = function(){
         
