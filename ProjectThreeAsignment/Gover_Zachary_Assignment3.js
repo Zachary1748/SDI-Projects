@@ -5,11 +5,13 @@
 // Term Number: 1410
 // Course: SDI
 
+// Global Varibales
 var jobOffer;
 var hirePeople = true;
 var hireAmmount;
 var chargeAmount;
 
+// Determines if the code will go all the way through.
 jobOffer = prompt("We have an offer from Freelancer.com to build a big eCommerce website, do you want to accept it?", "Yes or No?");
 
 // Procedure
@@ -50,7 +52,7 @@ var hireIncorrect = function () {
     
 };
 
-// People we are hiring and their information
+// People we are hiring for JavaScript and their information
 var handleJS = function (json) {
     
     console.log("Here is a list of all of the JavaScript experts we know we are going to hiring: ");
@@ -66,6 +68,7 @@ var handleJS = function (json) {
     
 };
 
+// People we are hiring for PHP and their information
 var handlePHP = function (json) {
     
     console.log("Here is a list of all of the PHP experts we know we are going to hiring: ");
@@ -120,6 +123,7 @@ if (jobOffer === "Yes" || jobOffer === "yes") {
     
     console.log("We need to find out how much we need to charge the client. We would like to charge them 2\,000");
     
+    // Charge ammount
     chargeAmount = new Array();
     chargeAmount[0] = 100;
     chargeAmount[1] = 250;
@@ -137,6 +141,7 @@ if (jobOffer === "Yes" || jobOffer === "yes") {
                 " browser testing: " + chargeAmount[1] +
                 " Development: " + chargeAmount[2]);
     
+    // Finishing the project and code
     var projectFinished = function(){
         
         var finishProject = confirm("Would you like to to submit the project?");
