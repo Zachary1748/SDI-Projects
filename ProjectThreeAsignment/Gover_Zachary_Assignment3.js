@@ -117,6 +117,28 @@ if (jobOffer === "Yes" || jobOffer === "yes") {
     
     handlePHP(json2);
     
+    var projectFinished = function(){
+        
+        var finishProject = confirm("Would you like to to submit the project?");
+        while (finishProject != true){
+            
+            var tryAgain = confirm("2 Weeks later... Would you like to to submit the project now?");
+            
+            if (tryAgain == true) {
+                
+                return finishProject;
+                
+            }
+            
+        };
+        
+        
+    };
+    
+    projectFinished();
+    
+    console.log("Awesome we finished the project!!!! Let's find another?");
+    
     
 // If the user types anything other then yes in the jobOffer prompt    
 } else {
