@@ -5,30 +5,51 @@
 // Term Number: 1410
 // Course: SDI
 
-var jobOffer = prompt("We have an offer from Freelancer.com to build a big eCommerce website, do you want to accept it?", "Yes or No?");
 var acceptedOffer = true;
 var hirePeople = true;
 var hireAmmount = 4;
 
+var jobOffer = prompt("We have an offer from Freelancer.com to build a big eCommerce website, do you want to accept it?", "Yes or No?");
+
+// Procedure
 var codingLangauge = function() {
     
+    // Local Variables
     var codingCMS = "Joomla";
     
-    console.log("We are going to build this eCommerce website with " + codingCMS);
+    // Conditional Statement
+    if (jobOffer === "Yes" || jobOffer === "yes") {
+        
+        // Nested Conditional Statement
+        if (codingCMS == "Joomla") {
+            
+            console.log("Awesome! Let's get started on the project.");
+            console.log("Next we need to find out how many people we need to hire for this project.");
+            console.log("Also we have decided that we are going to build this eCommerce website with " + codingCMS);
+            
+            return codingCMS
+            
+        } else {
+            
+            console.log("Oop's there was an error. We were supposed to be building this website using Joomla.");
+            
+        }
+        
+    } else {
+        
+        alert("Dang! We\'ll find another offer and let you know boss.");
+        
+    }
     
     return codingCMS;
     
-};
+}
 
+codingLangauge();
 
-if (jobOffer == "Yes" || jobOffer == "yes") {
+if (jobOffer === "Yes" || jobOffer === "yes") {
     
-    console.log("We have accepted the offer from Freelancer.com Let\'s get started!");
-    
-    codingLangauge();
-    
-} else {
-    
-    alert("Dang! We\'ll find another offer and let you know boss.");
+    confirm("We have accepted the project offer and we are going to build it using " + codingCMS);
     
 }
+
