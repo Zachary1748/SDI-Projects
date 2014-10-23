@@ -88,11 +88,25 @@ var itemCost = function (){
     
 };
 
+var dateDifference = function(){
+    
+    var hoursInDay = 24;
+    var days = 18;
+    var daysInWeek = 7;
+    
+    var totalHours = hoursInDay * days;
+    var totalWeeks = days / daysInWeek;
+    
+    console.log("There are " + totalHours + " hours between now and when we move or " +
+                totalWeeks.toFixed(1) + " weeks before we move.");
+    
+};
+
 webAddress();
 upperCase();
 replaceSeperator();
 itemCost();
-
+dateDifference();
 
 
 
