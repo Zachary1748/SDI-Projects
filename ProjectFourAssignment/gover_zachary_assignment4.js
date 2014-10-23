@@ -5,11 +5,12 @@
 // Term Number: 1410
 // Course: SDI
 
+// Check to see if URL is in the correct format.
 var webAddress = function (){
     
     var address = "http://goverdevelopment.com";
-    var end = address.indexOf("g");
-    var withHttp = address.substring(0, end);
+    var end = address.indexOf("g"); // Determine where to stop checking for accuracy.
+    var withHttp = address.substring(0, end); 
     
     if (withHttp == "http://" || withHttp == "https://") {
         
@@ -27,6 +28,7 @@ var webAddress = function (){
     
 };
 
+// Change sentence to have the first letter of every word capitalized.
 var upperCase = function(){
     
     var caseWord = "hello! my name is zachary.";
@@ -41,6 +43,7 @@ var upperCase = function(){
     
 };
 
+// Replace values within the string
 var replaceSeperator = function (){
     
     var sentenceReplace = "We are going to replace some stuff, how about commas and question marks? That would be cool, can we do it?";
@@ -57,6 +60,7 @@ var replaceSeperator = function (){
     
 };
 
+// Add cost from sales tax and determine which state is cheaper.
 var itemCost = function (){
     
     console.log("We are moving to Texas and we need to figure out the price difference for a couch we are going to buy. " +
@@ -88,6 +92,7 @@ var itemCost = function (){
     
 };
 
+// Determine how many hours are in 18 days. As well as weeks.
 var dateDifference = function(){
     
     var hoursInDay = 24;
@@ -106,6 +111,7 @@ var dateDifference = function(){
     
 };
 
+// Convert a string to a number.
 var stringToNumer = function (){
     
     var myNumberString = "24";
@@ -128,6 +134,7 @@ var stringToNumer = function (){
     
 };
 
+// Total cost of bills; Adding string values.
 var totalItems = function (){
     
     var costOfBills = ["Electric:", 89.52, "Rent: ", 865.50, "Internet: ", 29.99];
