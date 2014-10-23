@@ -25,3 +25,17 @@ var webAddress = function (){
     
 };
 
+var upperCase = function(){
+    
+    var caseWord = "hello! my name is zachary.";
+    
+    var subString = caseWord.charCodeAt();
+    
+    console.log(subString);
+    
+    
+};
+
+webAddress();
+
+upperCase();
