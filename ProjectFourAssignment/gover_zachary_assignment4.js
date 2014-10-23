@@ -100,6 +100,41 @@ var dateDifference = function(){
     console.log("There are " + totalHours + " hours between now and when we move or " +
                 totalWeeks.toFixed(1) + " weeks before we move.");
     
+    console.log(" ");
+    
+    return totalHours;
+    
+};
+
+var stringToNumer = function (){
+    
+    var myNumberString = "24";
+    
+    if (myNumberString == "24") {
+        
+        myNumberString = parseInt(myNumberString);
+        
+    } else {
+        
+        console.log("var myNumberString is already a number no need to convert it. See look: " + myNumberString);
+        
+    }
+    
+    console.log(myNumberString);
+    
+    console.log(" ");
+    
+    return myNumberString
+    
+};
+
+var totalItems = function (){
+    
+    var costOfBills = ["Electric:", 89.52, "Rent: ", 865.50, "Internet: ", 29.99];
+    var totalResult = costOfBills[1] + costOfBills[3] + costOfBills[5];
+    
+    console.log("Total amount due this month: " + totalResult);
+    
 };
 
 webAddress();
@@ -107,7 +142,8 @@ upperCase();
 replaceSeperator();
 itemCost();
 dateDifference();
-
+stringToNumer();
+totalItems();
 
 
 
