@@ -29,13 +29,35 @@ var upperCase = function(){
     
     var caseWord = "hello! my name is zachary.";
     
-    var subString = caseWord.charCodeAt();
+    var caseWord = caseWord.toUpperCase();
     
-    console.log(subString);
+    console.log(caseWord);
     
+    return caseWord;
+    
+};
+
+var replaceSeperator = function (){
+    
+    var sentenceReplace = "We are going to replace some stuff, how about commas and question marks? That would be cool, can we do it?";
+    var replaceOne = '/';
+    var replaceTwo = '!';
+    var sentenceReplace = sentenceReplace.split(',').join(replaceOne);
+    var sentenceReplace = sentenceReplace.split('?').join(replaceTwo);
+    
+    console.log(sentenceReplace);
+    
+    return sentenceReplace;
     
 };
 
 webAddress();
-
+replaceSeperator();
 upperCase();
+
+
+
+
+
+
+
