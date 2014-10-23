@@ -142,6 +142,8 @@ var totalItems = function (){
     
     console.log("Total amount due this month: " + totalResult);
     
+    return totalResult;
+    
 };
 
 webAddress();
