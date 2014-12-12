@@ -79,7 +79,48 @@ var numberFunction = function(hireAmmount) {
 };
 
 
+var procedureFunction = function(argArray) {
+	
+	var listEmployeesFirstName = argArray.join(", ");
+	
+	console.log("Here is a list of all of the employee\'s: \n" + listEmployeesFirstName);
+	
+	var employeeAmmount = parseInt(prompt("How many employee\'s do we have?", "4"));
+	
+	for (employeeAmmount; employeeAmmount > 4; employeeAmmount++) {
+		
+		var doubleCheck = confirm("You said: " + employeeAmmount + ", is this correct? OK for yes and Cancel for No.");
+		
+		while (doubleCheck === false) {
+			
+			var doubleCheck = confirm("That answer was incorrect please try again. OK for yes and Cancel for No.");
+			
+		};
+		
+	};
+	
+	var firstTwoNames = argArray[0] + " " + argArray[1];
+	console.log(firstTwoNames);
+	
+	return firstTwoNames;
+	
+};
 
+var booleanFunction = function(argAge) {
+	
+	if (argAge === true) {
+		
+		console.log("You\'re Correct! Good job!");
+		
+	} else {
+		
+		onsole.log("You\'re Incorrect! Better luck next time!");
+		
+	}
+	
+	return argAge;
+	
+}
 
 //-------------- Main Code ------------------//
 
@@ -96,9 +137,15 @@ if (acceptOffer === "Yes") {
 	
 	// Section Two
 	var hireQuestion = parseInt(prompt("How many people are we going to hire?", "2"));
-	var hireingAmmount = numberFunction();
+	var hiringAmmount = numberFunction(hireQuestion);
 	
 	// Section Three
+	var listEmployees = ["Zachary", "Stephanie", "Joshua", "Joe"];
+	var employeeQuestion = procedureFunction(listEmployees);
+	
+	// Section Four
+	var myAge = confirm("My age is 19 year\'s old. Is this correct?");
+	var ageQuestion = booleanFunction(myAge);
 	
 	console.log("\n \n *PROJECT COMPLETED!*");
 
