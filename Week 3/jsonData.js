@@ -38,22 +38,7 @@ var json2 = {
             "position" : "Front-End Developer",
             "age" : 30
             
-        },
-        {
-            
-            "employeename" : "Kristine Sharp",
-            "position" : "Back-End Developer",
-            "age" : 24
-            
-        },
-        {
-            
-            "employeename" : "Mark Darts",
-            "position" : "Project Managment",
-            "age" : 32
-            
         }
-        
     ]
     
 };

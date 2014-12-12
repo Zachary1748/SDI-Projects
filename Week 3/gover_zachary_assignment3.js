@@ -14,7 +14,37 @@ var companyName = "Gover Development";
 
 //-------------- Functions ------------------//
 
-
+var stringFunction = function(leadEmp, regularEmp) {
+	
+	for (var i = 0; i < leadEmp.leadEmployees.length; i++){
+	       
+		var leadEmployees = json1.leadEmployees[i];
+		var regularEmployees = json2.regularEmployees[i];
+		
+		var leadEmployeeName = "Lead Employee: \n" + leadEmployees.employeename + "\n\n";
+		var regularEmployeeName = "Regular Employee: \n" + regularEmployees.employeename + "\n\n";
+		
+		console.log(leadEmployeeName, regularEmployeeName);
+		
+	};
+	
+	var question = prompt("What position is Zachary?", "Lead Developer");
+		
+	if (question === "Lead Developer") {
+		
+		console.log("You're Correct!");
+		
+		return question;
+		
+	} else {
+		
+		var answer = console.log("You're incorrect!");
+		
+		return answer;
+		
+	}
+	
+};
 
 
 //-------------- Main Code ------------------//
@@ -25,6 +55,8 @@ var acceptOffer = prompt("Would you like to accept a project offer from Freelanc
 acceptOffer = acceptOffer.charAt(0).toUpperCase() + acceptOffer.slice(1);
 
 if (acceptOffer === "Yes") {
+	
+	var employeeAnswer = stringFunction(json1, json2);
 	
 	
 	
