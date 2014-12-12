@@ -46,6 +46,40 @@ var stringFunction = function(leadEmp, regularEmp) {
 	
 };
 
+var numberFunction = function(hireAmmount) {
+	
+	while (hireAmmount > 3 && hireAmmount > 1){
+		
+		if (hireAmmount > 3) {
+			
+			console.log("You said: " + hireAmmount);
+			
+			console.log("That's a little high, let\'s minus 1 from that.");
+			
+			hireAmmount = hireAmmount - 1;
+			
+		} else if (hireAmmount < 1) {
+			
+			console.log("You said: " + hireAmmount);
+			
+			console.log("That's a little high, let\'s add 1 from that.");
+			
+			hireAmmount = hireAmmount + 1;
+			
+		}
+		
+	};
+	
+	console.log("Alright!, " + hireAmmount + " is a good number. Let's hire one more just in case.");
+	
+	hireAmmount = hireAmmount + 1;
+	
+	return hireAmmount;
+	
+};
+
+
+
 
 //-------------- Main Code ------------------//
 
@@ -56,9 +90,15 @@ acceptOffer = acceptOffer.charAt(0).toUpperCase() + acceptOffer.slice(1);
 
 if (acceptOffer === "Yes") {
 	
+	// Section One
 	var employeeAnswer = stringFunction(json1, json2);
 	
 	
+	// Section Two
+	var hireQuestion = parseInt(prompt("How many people are we going to hire?", "2"));
+	var hireingAmmount = numberFunction();
+	
+	// Section Three
 	
 	console.log("\n \n *PROJECT COMPLETED!*");
 
