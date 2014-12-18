@@ -69,6 +69,21 @@ var checkEmail = function(argEmail) {
     
 };
 
+var checkAddress = function(argAdress) {
+    
+    if (argAdress.substr(0,6) == "https:" || argAdress.substr(0,5) == "http:") {
+        
+        console.log("Correct!");
+        return argAdress;
+        
+    } else {
+        
+        console.log("INCORRECT!");
+        return false;
+        
+    }
+    
+};
 
 // Main Code
 // Check number pattern
@@ -91,3 +106,10 @@ if (emailCheck != false) {
 
 }
 
+// Check web address
+var address = checkAddress(webAddress);
+if (address != false) {
+    
+    console.log("var address() equals: " + address);
+
+}
