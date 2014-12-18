@@ -9,6 +9,7 @@ var phoneNumber = "000-000-0000";
 var sentenceCase = "hello my name is zachary gover.";
 var email = "abc@abc.abc";
 var webAddress = "https://goverdevelopment.com";
+var character = "a,b,c";
 
 // Functions
 var checkNumber = function(number) {
@@ -85,6 +86,14 @@ var checkAddress = function(argAdress) {
     
 };
 
+var replacingCharacter = function(argCharacter){
+    
+    argCharacter = argCharacter.split(',').join('/');
+    
+    return argCharacter;
+    
+};
+
 // Main Code
 // Check number pattern
 var number = checkNumber(phoneNumber);
@@ -113,3 +122,7 @@ if (address != false) {
     console.log("var address() equals: " + address);
 
 }
+
+// Replace characters
+var replacedCharacter = replacingCharacter(character);
+console.log("You started with this: " + character + ", and ended with this: " + replacedCharacter);
