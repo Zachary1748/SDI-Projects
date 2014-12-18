@@ -6,8 +6,9 @@
 
 // Global Variables
 var phoneNumber = "000-000-0000";
-var sentenceCase = "hello, my name is zachary gover.";
+var sentenceCase = "hello my name is zachary gover.";
 var email = "abc@abc.abc";
+var webAddress = "https://goverdevelopment.com";
 
 // Functions
 var checkNumber = function(number) {
@@ -32,9 +33,20 @@ var checkNumber = function(number) {
 
 var checkCase = function(myString) {
     
-    var inCorrect = myString.charAt(" ").toUpperCase();
+    var words = myString.split(' ');
     
-    console.log(inCorrect);
+    for(var i = 1 ; i < words.length ; i++){
+        
+        words[i] = words[i].charAt(0).toUpperCase() + words[i].substr(1);
+        
+    }
+    
+    words = words.join();
+    words = words.split(',').join(' ');
+    words.charAt(0).toUpperCase() + words.slice(1);
+    console.log(words);
+    
+    return words;
     
 };
 
@@ -57,18 +69,25 @@ var checkEmail = function(argEmail) {
     
 };
 
+
 // Main Code
 // Check number pattern
 var number = checkNumber(phoneNumber);
 
 if (number != false) {
     
-    console.log("var checkNumber() equals: " + number);
+    console.log("var number() equals: " + number);
 
 }
 
 // Case correction
-//var caseCorrection = checkCase(sentenceCase);
+var caseCorrection = checkCase(sentenceCase);
 
 // Check Email
 var emailCheck = checkEmail(email);
+if (emailCheck != false) {
+    
+    console.log("var emailCheck() equals: " + emailCheck);
+
+}
+
