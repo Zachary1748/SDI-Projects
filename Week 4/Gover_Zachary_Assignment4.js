@@ -10,6 +10,7 @@ var sentenceCase = "hello my name is zachary gover.";
 var email = "abc@abc.abc";
 var webAddress = "https://goverdevelopment.com";
 var character = "a,b,c";
+var decimalNumber = 1.2345;
 
 // Functions
 var checkNumber = function(number) {
@@ -94,6 +95,14 @@ var replacingCharacter = function(argCharacter){
     
 };
 
+var roundDecimal = function(argDecimal){
+    
+    argDecimal = argDecimal.toFixed(2);
+    
+    return argDecimal;
+    
+};
+
 // Main Code
 // Check number pattern
 var number = checkNumber(phoneNumber);
@@ -126,3 +135,7 @@ if (address != false) {
 // Replace characters
 var replacedCharacter = replacingCharacter(character);
 console.log("You started with this: " + character + ", and ended with this: " + replacedCharacter);
+
+// Round decimal for money
+var roundedDemical = roundDecimal(decimalNumber);
+console.log("You started with this: " + decimalNumber + ", and ended with this: " + roundedDemical);
