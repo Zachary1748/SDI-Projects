@@ -11,6 +11,7 @@ var email = "abc@abc.abc";
 var webAddress = "https://goverdevelopment.com";
 var character = "a,b,c";
 var decimalNumber = 1.2345;
+var stringNumber = "125";
 
 // Functions
 var checkNumber = function(number) {
@@ -103,6 +104,14 @@ var roundDecimal = function(argDecimal){
     
 };
 
+var convertStringToNumber = function(argString) {
+    
+    argString = parseInt(argString);
+    
+    return argString;
+    
+};
+
 // Main Code
 // Check number pattern
 var number = checkNumber(phoneNumber);
@@ -139,3 +148,7 @@ console.log("You started with this: " + character + ", and ended with this: " + 
 // Round decimal for money
 var roundedDemical = roundDecimal(decimalNumber);
 console.log("You started with this: " + decimalNumber + ", and ended with this: " + roundedDemical);
+
+// String to Number
+var finalNumber = convertStringToNumber(stringNumber);
+console.log("You started with this: " + stringNumber + ", and ended with this: " + finalNumber);
